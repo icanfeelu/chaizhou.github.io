@@ -5,6 +5,27 @@
     <title>柴周的主页</title>
 </head>
 <body>
-    HELLO
+<h1 class="textCen">
+    管毓婷这个大傻逼
+</h1>
+
 </body>
+<script type="text/javascript">
+    //rem布局
+    (window.onload = function () {
+        window.onresize = function () {
+            initFont();
+        };
+        function initFont() {
+            var htmlWidth = document.body.clientWidth;
+            if (htmlWidth >= 750) {
+                document.documentElement.style.fontSize = 100 + 'px';
+            } else {
+                document.documentElement.style.fontSize = 100 / 375 * htmlWidth + 'px';
+            }
+        }
+
+        initFont();
+    })();
+</script>
 </html>
